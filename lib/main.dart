@@ -1,10 +1,7 @@
 import 'dart:developer';
 
-import 'package:aa_travel_planner/favorite_card.dart';
-import 'package:aa_travel_planner/favorites_details_screen.dart';
-import 'package:aa_travel_planner/favorites_repository.dart';
-import 'package:aa_travel_planner/favorites_screen.dart';
-import 'package:aa_travel_planner/remove_button.dart';
+import 'package:aa_travel_planner/Features/Favorites/Repository/favorites_repository.dart';
+import 'package:aa_travel_planner/Features/Favorites/Screens/favorites_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -656,27 +653,6 @@ class ExploreDestinationsScreen extends StatelessWidget {
                 ),
               ),
             );
-          },
-        );
-      },
-    );
-  }
-}
-
-class _FavoritesScreenState extends State<FavoritesScreen> {
-  @override
-  Widget build(BuildContext context) {
-    List<Destination> favorites = widget.favoritesRepository.getFavorites();
-
-    return ListView.builder(
-      itemCount: favorites.length,
-      itemBuilder: (context, index) {
-        final destination = favorites[index];
-        return FavoriteCard(
-          destination: destination,
-          favoritesRepository: widget.favoritesRepository,
-          onRemove: () {
-            setState(() {});
           },
         );
       },
