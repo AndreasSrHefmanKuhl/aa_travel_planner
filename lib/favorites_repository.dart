@@ -1,6 +1,5 @@
 import 'dart:developer';
 import 'package:aa_travel_planner/Features/Destination/Models/destination.dart';
-import 'package:aa_travel_planner/main.dart';
 
 class FavoritesRepository {
   final List<Destination> _favoriteDestinations = [
