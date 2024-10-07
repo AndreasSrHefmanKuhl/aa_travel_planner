@@ -34,7 +34,10 @@ class TripDetailsScreen extends StatelessWidget {
               const SizedBox(height: 8),
               Text(trip.itinerary, style: const TextStyle(fontSize: 16)),
               const SizedBox(height: 16),
-              GoBackButton(text: ,),
+              const GoBackButton(
+                text: Text('Go Back'),
+                press: navigation,
+              ),
             ],
           ),
         ),
