@@ -3,9 +3,9 @@ import 'package:aa_travel_planner/Features/Destination/Repository/destination_re
 import 'package:aa_travel_planner/Features/Destination/Screens/destination_details_screen.dart';
 import 'package:aa_travel_planner/Features/Destination/Widgets/popular_destination_card.dart';
 import 'package:aa_travel_planner/Features/Favorites/Repository/favorites_repository.dart';
+import 'package:aa_travel_planner/Features/Trip/Repository/trip_repository.dart';
 import 'package:aa_travel_planner/Features/Trip/Screens/trip_details_screen.dart';
-import 'package:aa_travel_planner/Features/Trip/trip_repository.dart';
-import 'package:aa_travel_planner/main.dart';
+
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
