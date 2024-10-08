@@ -36,7 +36,7 @@ class TripDetailsScreen extends StatelessWidget {
               const SizedBox(height: 16),
               const GoBackButton(
                 text: Text('Go Back'),
-                press: navigation,
+                press: null,
               ),
             ],
           ),
